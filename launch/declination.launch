@@ -1,0 +1,7 @@
+<launch>
+  <group ns="imu">
+    <node pkg="declination" type="compute.py" name="declination_compute" cwd="node">
+      <remap from="fix" to="/gps/fix" />
+    </node>
+  </group>
+</launch>
