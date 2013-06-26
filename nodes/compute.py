@@ -7,6 +7,7 @@ from std_msgs.msg import Float32
 from sensor_msgs.msg import NavSatFix
 
 from geomag.geomag import GeoMag
+from math import radians
 
 
 class Declination:
@@ -27,7 +28,7 @@ class Declination:
             self.fix = msg
             if not msg.altitude: msg.altitude = 0
             result = self.gm.calc(msg.latitude, msg.longitude, msg.altitude)
-            self.pub.publish(math.radians(result.dec)) 
+            self.pub.publish(radians(result.dec)) 
 
     def spin(self):
         rospy.spin()
