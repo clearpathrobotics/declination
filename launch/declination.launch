@@ -1,10 +1,7 @@
 <launch>
   <group ns="imu">
-    <node pkg="declination" type="compute.py" name="declination_compute" cwd="node">
+    <node pkg="declination" type="compute" name="declination_compute">
       <remap from="fix" to="/gps/fix" />
-    </node>
-    <node pkg="declination" type="apply.py" name="declination_apply">
-      <param name="default" value="-9.7" />
     </node>
   </group>
 </launch>
