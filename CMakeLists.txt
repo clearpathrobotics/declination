@@ -39,6 +39,9 @@ include_directories(include
 
 ## Declare a cpp executable
 add_executable(${PROJECT_NAME}_apply_to_imu src/apply_to_imu.cpp)
+set_target_properties(${PROJECT_NAME}_apply_to_imu
+                      PROPERTIES OUTPUT_NAME apply_to_imu
+                      PREFIX "")
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_apply_to_imu
