@@ -2,8 +2,8 @@
 Changelog for package declination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2013-10-24)
+------------------
 * Fix executable name.
 
 0.0.1 (2013-09-03)
