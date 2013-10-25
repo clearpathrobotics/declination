@@ -2,6 +2,10 @@
 Changelog for package declination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix executable name.
+
 0.0.1 (2013-09-03)
 ------------------
 * Move node body into module, as per ROS style.
